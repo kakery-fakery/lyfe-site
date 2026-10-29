@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lyfe Support</title>
+  <meta name="description" content="Help with the Lyfe iPhone app: signing in, the emailed code, joining a household, reminders, leaving and deleting your account.">
+  <style>
+    :root { color-scheme: light dark; --bg: #fbfbf8; --fg: #1c1c1a; --muted: #5d5d58; --accent: #0f766e; --rule: #e4e4df; --card: #f1f1ec; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #161614; --fg: #ecece6; --muted: #a3a39c; --accent: #5eead4; --rule: #2c2c29; --card: #1f1f1c; } }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    main { max-width: 38rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+    h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 1rem; }
+    h2 { font-size: 1.25rem; margin: 2rem 0 .5rem; }
+    h3 { font-size: 1.05rem; margin: 1.5rem 0 .25rem; }
+    a { color: var(--accent); }
+    .contact { background: var(--card); border-radius: .75rem; padding: 1rem 1.25rem; margin: 0 0 1rem; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+    footer a { margin-right: 1rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Lyfe Support</h1>
+
+    <div class="contact">
+      <strong>Need a hand?</strong> Email
+      <a href="mailto:support@example.com">support@example.com</a>.
+      <!-- TODO Kyle: put the real support address here and in privacy.html (docs/release.md, Privacy policy and support pages) -->
+      Say which email you signed in with and what you expected to happen, and you will hear back
+      within a few days.
+    </div>
+
+    <p>Lyfe is an iPhone app for the two people who run a home: one shared record of chores,
+      groceries and recipes, the same on both phones. It needs an internet connection; what you
+      see is what the server last said, and pulling down on a list refreshes it.</p>
+
+    <h2>Getting started</h2>
+    <p>Tap <strong>Create account</strong>, type your email and a password (at least 8 characters,
+      with a letter and a number), and type the six-digit code from the email Lyfe sends you.
+      Then <strong>Start a household</strong> and pick your name and colour, or <strong>Join with
+      a code</strong> if the other person already has one.</p>
+
+    <h2>Common questions</h2>
+
+    <h3>The code hasn't arrived</h3>
+    <p>Look in your junk or spam folder; the email comes from Lyfe. It can take a few minutes.
+      If it still hasn't come, tap <strong>Send a new code</strong>, and check the address you
+      typed.</p>
+
+    <h3>I forgot my password</h3>
+    <p>On the sign-in screen tap <strong>Forgot password?</strong>. A code goes to your email;
+      the code and a new password sign you in.</p>
+
+    <h3>How does the other person join?</h3>
+    <p>On your phone, the <strong>Household</strong> tab shows the invite code, with Share next
+      to it. On their phone, after creating their account, they tap <strong>Join with a
+      code</strong> and type it. Both Household tabs then list two members. If a code gets out,
+      <strong>New code</strong> on the Household tab stops the old one working.</p>
+
+    <h3>Reminders aren't showing</h3>
+    <p>Reminders are on the <strong>Household</strong> tab under <strong>Remind me</strong>: on
+      days something is due or overdue, the phone says what, at the time you set. If Lyfe isn't
+      allowed to notify you, turn notifications on in Settings › Lyfe › Notifications.</p>
+
+    <h3>The phones show different things</h3>
+    <p>Pull down on the list to refresh. Both phones read the same record, so once each has
+      refreshed they agree. If a change was refused with "Already updated on another phone", the
+      other person got there first and the list shows what they did.</p>
+
+    <h3>Leaving a household, or deleting my account</h3>
+    <p>Both are on the <strong>Household</strong> tab. <strong>Leave household</strong> keeps
+      your account; the household keeps its record and what you ticked off stays in your name,
+      and you can join again with the code. <strong>Delete account</strong> leaves the household
+      first and then removes your account and sign-in for good. What Lyfe keeps and for how long
+      is in the <a href="privacy.html">privacy policy</a>.</p>
+
+    <h2>Something else</h2>
+    <p>If the app does something it shouldn't, email the address above with what you did, what
+      happened and what you expected. The iOS version (Settings › General › About) helps.</p>
+
+    <footer>
+      <a href="index.html">Lyfe</a>
+      <a href="privacy.html">Privacy policy</a>
+    </footer>
+  </main>
+</body>
+</html>
