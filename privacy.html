@@ -28,13 +28,14 @@
 <body>
   <main>
     <h1>Lyfe Privacy Policy</h1>
-    <p class="meta">Effective 28 October 2026</p>
+    <p class="meta">Effective 29 October 2026</p>
 
     <div class="summary">
       <strong>In short</strong>
       <ul>
         <li>Lyfe collects your email address, the name and colour you pick, and what you put in
-          the app: chores, groceries, recipes and who did what. Nothing else.</li>
+          the app: chores, groceries, recipes and who did what, and the photos of a recipe page
+          while they are being read. Nothing else.</li>
         <li>It uses them only to run the app. No advertising, no analytics, no tracking, no
           selling or sharing with anyone outside your household.</li>
         <li>Everything is stored on Amazon Web Services in the United States and deleted when you
@@ -61,9 +62,15 @@
           <td>Your household's name, its chores with their schedules and notes, each completion,
             postponement or skip with who did it and when, the grocery list and the recipes.
             Shared with the members of your household and no one else.</td></tr>
+        <tr><td><strong>Recipe page photos</strong></td>
+          <td>When you import a recipe from photos, the photos you take or choose are sent to
+            Lyfe's server in the US East region, read once by Amazon Bedrock (an AWS service
+            running Anthropic's Claude model, inside the developer's AWS account) to pick out
+            the recipe's name, ingredients and method, and then discarded. Lyfe keeps the text
+            you save, never the photos. Nothing is sent until you tap Read the recipe.</td></tr>
       </tbody>
     </table>
-    <p>That is all. Lyfe does not collect your contacts, location, photos, calendar, device
+    <p>That is all. Lyfe does not collect your contacts, location, photo library, calendar, device
       identifiers, advertising identifiers, usage analytics or crash reports. It has no
       advertising and no third-party analytics or tracking software. Lyfe does not track you
       across other apps or websites, and its App Store privacy label says the same.</p>
@@ -77,8 +84,9 @@
     <h2>Where it is kept</h2>
     <p>Lyfe's accounts and record live on <strong>Amazon Web Services</strong> in the US East
       (N. Virginia) region, in an account controlled by the developer: sign-in and accounts in
-      Amazon Cognito, the record in Amazon DynamoDB, and the emailed codes sent through Amazon
-      Simple Email Service. The connection between the app and these services is encrypted
+      Amazon Cognito, the record in Amazon DynamoDB, the emailed codes sent through Amazon
+      Simple Email Service, and the reading of recipe photos done by Amazon Bedrock, which does
+      not store the photos. The connection between the app and these services is encrypted
       (HTTPS), and the data is encrypted at rest. Backups are kept for up to 35 days, after which
       deleted data is gone from them too.</p>
 
